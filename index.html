@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>RGIPT Digital Library</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWQP2WY4CM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NWQP2WY4CM');
+    </script>
+</head>
+<body>
+
+    <div data-aos="fade-left"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="3000"
+    data-aos-once="true">
+    <li class="leftshift">RGIPT Digital Library</li>
+    </div>
+    
+    
+    <nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            
+            <!-- <div class="logo"><img src="logo.jpg" alt="logo"></div> -->
+            <!-- <li class="leftshift"><b>RGIPT Digital Library</b></li> -->
+            <!-- <li><a href="#"><b>Home</b></a></li> -->
+            <li><a href="allbooks.html"><b>All Books</b></a></li>
+            <div class="dropdown">
+               <li> <a class="dropbtn"><b>Category</b></a></li>
+                <div class="dropdown-content">
+                 <li> <a href="engineering.html">Engineering</a></li>
+                  <li><a href="cbse.html">CBSE</a></li>
+                  <li><a href="competitive.html">Competitive Exams</a></li>
+                  <li><a href="#">Video Lectures</a></li>
+                  <li><a href="try.html">Notes</a></li> 
+                </div>
+              </div>
+            <li><a href="#footer-wrapper"><b>Contact Us</b></a></li>
+            <li><a href="login.html"><b>Login Here</b></a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <!-- <input type="text" name="search" id="search" placeholder="search"> -->
+            <!-- <button class="btn btn-sm"><b>Search</b></button> -->
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    
+    <section class="background firstSection">
+        <div  class="box-main">
+            <div class="firstHalf" >
+                <div data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="3000"
+                data-aos-once="true">
+                <p class="text-big">Reading At RGIPT <br> Digital Library</p>
+                </div>
+                
+                <br>
+                
+                <!-- <div class="buttons">
+                    <button class="btn"><b>Subscribe</b></button>
+                    <button class="btn"><b>Watch Video</b></button>
+
+                </div> -->
+            </div>
+        </div>
+    </section>
+        <section class="section" id="cccc"   >
+            <div class="paras"  >
+                
+                <div data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-once="true">
+                
+                    <p class="sectionTag text-big ENGINEERING"><b>ENGINEERING</b></p>
+                </div>
+             
+    
+            <button class="oldbutton"><a href="engineering.html">>></a></button>
+            <p class="sectionSubTag text-small"> </p>
+        
+            </div>
+            <div class="thumbnail">
+                <!-- <img src="logo.jpg" alt="laptop image" class="imgFluid"> -->
+            </div>
+        </section>
+    
+        <section class="section section-left" id="about">
+            <div class="paras">
+                <div
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                >
+                <p class="sectionTag text-big">CBSE</p>
+              </div>
+            
+            <button class="oldbutton"><a href="cbse.html">>></a></button>
+            <div class="thumbnail">
+                <!-- <img src="https://source.unsplash.com/900x900/?coding,apple,html" alt="laptop image" class="imgFluid"> -->
+                <!-- <img src="cbse.webp" alt="" class="imgFluid"> -->
+            </div> 
+            <p class="sectionSubTag text-small"></p>
+            </div>
+            
+        </section>
+        <section class="section" id="services">
+            <div class="paras">
+                <div
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                >
+            <p class="sectionTag text-big">COMPETITIVE EXAMS</p>
+            </div>
+            <button class="oldbutton"><a href="competitive.html">>></a></button>
+            <p class="sectionSubTag text-small"></p>
+            
+            <p class="sectionSubTag text-small"> 
+            
+             </p>
+            </div>
+            <div class="thumbnail">
+                <!-- <img src="https://source.unsplash.com/900x900/?javascript,apple, nature, happy" alt="laptop image" class="imgFluid"> -->
+            </div>
+        </section>
+
+    
+     
+    <section class="contact" id="contact">
+        <div data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+        data-aos-once="true">
+        <h1 class="text-center">REQUEST A BOOK</h1>
+        </div>
+        
+        <div class="form">
+            <!-- <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email">
+             <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate your concern"></textarea> -->
+            <button class="newbutton"><a href="mailto:anubhavladha11@gmail.com">>></a></button>
+        </div>
+    </section>
+    <!-- <button class="amazing">Chat</button> -->
+
+    
+    <div id="footer-wrapper">
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="contactme">Contact Us</h3>
+                        <p class="contactpara">
+                            <b>
+                                Rajiv Gandhi Institute Of Petroleum Technology<br>
+                        Jais, Amethi, India.<br>
+                        390018 <br> Mail us at : 20cs3009@rgipt.ac.in <br>
+                            </b>
+                        &nbsp&nbsp&nbsp
+                        </p>
+                    </div>
+                    <div class="col-sm-6 share">
+                        <a style="margin: 3%;font-size: 26px " href="https://www.facebook.com/acmrgipt"
+                            target="_blank" data-wow-delay="0.3s"><img src="facebook.svg" width="30px" height="30px" alt=""></a>
+
+                        <!-- <a style="margin: 5%;font-size: 26px" href="https://twitter.com/acmrgipt" target="_blank"
+                            class="fa fa-twitter wow fadeIn  myanimtw ja" data-wow-delay="0.6s"></a> -->
+
+                        <a style="margin: 3%;font-size: 26px" href="https://www.instagram.com/acmrgipt/"
+                            target="_blank"  data-wow-delay="0.9s"><img src="instagram.svg" height="30px" width="30px" alt=""></a>
+
+                        <a style="margin: 3%;font-size: 26px"
+                            href="https://www.youtube.com/channel/UCt9bKLss5uXhZ98_5RXqiwQ/featured" target="_blank"
+                             data-wow-delay="0.9s"><img src="youtube.svg" height="30px" width="30px" alt=""></a>
+
+                        <a style="margin: 3%;font-size: 26px"
+                            href="https://www.linkedin.com/company/acm-rgipt/mycompany/" target="_blank"
+                             data-wow-delay="0.9s"><img src="linkedin.svg" alt="" height="30px" width="30px"></a>
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2021 - www.RGIPTlibrary.com - All rights reserved
+        </p>
+    </footer> -->
+
+    <script src="resp.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+      <script src="./js/blog.js"></script>
+      <script src="./js/hotspot.js"></script>
+      <script>
+          blogmaker('indexblg');
+          gallerymaker('indexgallery');
+      </script>
+      <!-- <script src="js/plugins.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.prettyPhoto.js"></script>
+      <script src="js/init.js"></script>
+      <script src="js/jquery.swipebox.min.js"></script> -->
+      <script type="text/javascript">
+          jQuery(function ($) {
+              $(".swipebox").swipebox();
+          });
+      </script>
+    
+
+</body>
+
+</html>

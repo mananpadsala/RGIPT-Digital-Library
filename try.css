@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        *{
+            overflow-x: hidden;
+            /* overflow-y: initial; */
+            background-attachment: fixed;
+            overflow: -moz-scrollbars-vertical;
+        }
+        body{
+      background: url('cbse\(1\).jpeg');
+      background-size: cover;
+      /* background-size: inherit; */
+      background-attachment: fixed;
+      
+  }
+        input,
+        textarea,
+        button {
+            height: 25px;
+            margin: 0;
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            font-size: 12pt;
+            outline: none;
+            border-radius: 0;
+            background: none;
+            border: 1px solid #282B33;
+        }
+
+        button,
+        select {
+            height: 45px;
+            padding: 0 15px;
+            cursor: pointer;
+        }
+
+        button {
+            /* background: none; */
+            /* border: 1px solid black; */
+            margin: 25px 0;
+            text-decoration: none;
+        }
+        /* #imgClickAndChange{
+            text-decoration: none;
+            border-style: hidden;
+            border: hidden;
+            border-radius: 0%;
+        } */
+
+        /* button:hover { */
+            /* background-color: #282B33; */
+            /* color: white; */
+        /* } */
+
+
+        .tools {
+            overflow: auto;
+            /* overflow: scroll; */
+            /* overflow: visible; */
+            zoom: 1;
+            padding: 40px;
+        }
+
+        .search-area {
+            /* float: left; */
+            display: block;
+            margin: auto;
+            width: 40%;
+            /* border-radius: 12px; */
+            /* background-color: white; */
+        }
+        #search:hover{
+            color: black;
+        }
+        .settings {
+            /* display: none; */
+            /* float: none; */
+            width: 30%;
+            text-align: right;
+            position: fixed;
+            bottom: 1px;
+            right: 1px;
+        }
+        img:hover {
+            filter: alpha(opacity=30);
+            opacity: .7;
+        }
+        .settings a:hover{
+            filter: alpha(opacity=100);
+            opacity: .7;
+        }
+        /* #view {
+            display: none;
+            width: auto;
+            height: 47px;
+        } */
+
+        #searchbutton {
+            width: 60px;
+            height: 47px;
+        }
+
+        input#search {
+            width: 30%;
+            width: calc(100% - 90px);
+            padding: 10px;
+            border: 1px solid #282B33;
+        }
+
+        @media screen and (max-width:400px) {
+            .search-area {
+                width: 100%;
+            }
+        }
+
+        .products {
+            width: 100%;
+            font-family: Raleway;
+        }
+
+        .product {
+            display: inline-block;
+            width: calc(24% - 13px);
+            margin: 10px 10px 30px 10px;
+            vertical-align: top;
+        }
+
+        .product img {
+            display: block;
+            margin: 0 auto;
+            width: auto;
+            height: 200px;
+            /* max-width: calc(100% - 20px); */
+            max-width: 150px;
+            /* background-cover: fit; */
+            box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.8);
+            border-radius: 2px;
+        }
+
+        .product-content {
+            text-align: center;
+        }
+        .product-content a{
+            text-decoration: none;
+            color: black;
+        }
+        .product-content a:hover{
+            color: white;
+        }
+
+        .product h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0 0 0;
+        }
+
+        .product h3 small {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: italic;
+            margin: 7px 0 0 0;
+        }
+
+        .product .product-text {
+            margin: 7px 0 0 0;
+            color: #777;
+        }
+
+        .product .price {
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .product .genre {
+            font-size: 14px;
+        }
+
+
+        @media screen and (max-width:1150px) {
+            .product {
+                width: calc(33% - 23px);
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            .product {
+                width: calc(50% - 43px);
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            .product {
+                width: 100%;
+            }
+        }
+
+        /* TABLE VIEW */
+
+        @media screen and (min-width:401px) {
+            .settings {
+                display: block;
+            }
+            #view {
+                display: inline;
+            }
+            .products-table .product {
+                display: block;
+                width: auto;
+                margin: 10px 10px 20px 10px;
+            }
+            .products-table .product .product-img {
+                display: inline-block;
+                margin: 0;
+                width: 120px;
+                height: 220px;
+                vertical-align: middle;
+            }
+            .products-table .product img {
+                width: auto;
+                height: 120px;
+                max-width: 120px;
+            }
+            .products-table .product-content {
+                text-align: left;
+                display: inline-block;
+                margin-left: 20px;
+                vertical-align: middle;
+                width: calc(100% - 145px);
+            }
+            .products-table .product h3 {
+                margin: 0;
+            }
+        }
+        .initial{
+            padding: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+        }
+        .rightshift{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: block;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+        }
+        .rightshift:hover{
+            color: white;
+        }   
+        /* .products{
+            position: absolute;
+            left: 500px;
+        }  */
+        #search{
+            /* text-align: center; */
+            color: black;
+            background-color: white;
+            border-radius: 20px;
+            /* padding: 120px; */
+        }
+        ::placeholder{
+            color: gray;
+            opacity: 1;
+        }
+        :-ms-input-placeholder{
+            color: black;
+        }
+

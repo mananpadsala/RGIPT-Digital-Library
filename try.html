@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product List</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800" rel='stylesheet' type='text/css'>
+    <script src="try.js"></script>
+    <link rel="stylesheet" href="try.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h1 class="initial">RGIPT Digital Library</h1>
+
+    <a href="index.html" class="rightshift">Home</a>
+
+    <div class="tools">
+        <div class="search-area">
+            <input type="text" id="search" onkeyup="myFunction()" placeholder="Search Here" />
+            <!-- <button id="searchbutton">Go</button> -->
+        </div>
+        <div class="settings">
+            <!-- <button id="view">Switch View</button> -->
+
+
+            <!-- <button id="view"></button> -->
+            <a href="#" id="view"><img alt="" src="icon1.png" height="130px" width="130px" id="imgClickAndChange" onclick="changeImage()"  /></a>
+        </div>
+    </div>
+    <div class="products products-table" id="myUL">
+        
+            <!-- <li> -->
+                <div class="product">
+                    <div class="product-img">
+                        <a href="1.pdf"><img src="eng.jpg" height="500px" width="100px"></a>
+                    </div>
+                    <div class="product-content">
+                        <h3>
+                            <a href="1.pdf">Engineering Mathemetics</a>
+                            <small>Consectetur Adipisicing</small>
+                        </h3>
+                        <!-- <p class="product-text price">$9.99</p> -->
+                        <!-- <p class="product-text genre">DVD Rental</p> -->
+                    </div>
+                </div>
+            
+                <div class="product">
+                    <div class="product-img">
+                        <img src="engg.jpeg" height="500px" width="100px">
+                    </div>
+                    <div class="product-content">
+                        <h3>
+                            <a href="2.pdf">sit amet, consectetur adipisicing elit.</a> 
+                            <small>Consectetur Adipisicing</small>
+                        </h3>
+                        <!-- <p class="product-text price">$9.99</p> -->
+                        <!-- <p class="product-text genre">DVD Rental</p> -->
+                    </div>
+                </div>
+            
+                <div class="product">
+                    <div class="product-img">
+                        <img src="request(1).jpg" height="500px" width="100px">
+                    </div>
+                    <div class="product-content">
+                        <h3>
+                            <a href="3.pdf">Lorem ipsum</a> 
+                            <small>Consectetur Adipisicing</small>
+                        </h3>
+                        <!-- <p class="product-text price">$9.99</p> -->
+                        <!-- <p class="product-text genre">DVD Rental</p> -->
+                    </div>
+                </div>
+            
+                <div class="product">
+                    <div class="product-img">
+                        <img src="request(2).jpg" height="500px" width="100px">
+                    </div>
+                    <div class="product-content">
+                        <h3>
+                             <a href="1.pdf">adipisicing elit</a>
+                            <small>Consectetur Adipisicing</small>
+                        </h3>
+                        <!-- <p class="product-text price">$9.99</p> -->
+                        <!-- <p class="product-text genre">DVD Rental</p> -->
+                    </div>
+                </div>
+            
+                <div class="product">
+                    <div class="product-img">
+                        <img src="logo.jpg" height="500px" width="100px">
+                    </div>
+                    <div class="product-content">
+                        <h3>
+                             <a href="2.pdf">adipisicing elit</a>
+                            <small>Consectetur Adipisicing</small>
+                        </h3>
+                        <!-- <p class="product-text price">$9.99</p> -->
+                        <!-- <p class="product-text genre">DVD Rental</p> -->
+                    </div>
+                </div>
+            
+                <div class="product">
+                    <div class="product-img">
+                        <img src="engg.jpeg">
+                    </div>
+                    <div class="product-content">
+                        <h3>
+                             <a href="1.pdf">adipisicing elit</a>
+                            <small>Consectetur Adipisicing</small>
+                        </h3>
+                        <!-- <p class="product-text price">$9.99</p> -->
+                        <!-- <p class="product-text genre">DVD Rental</p> -->
+                    </div>
+                </div>
+            
+                <div class="product">
+                    <div class="product-img">
+                        <img src="engg.jpeg">
+                    </div>
+                    <div class="product-content">
+                        <h3>
+                             <a href="3.pdf">adipisicing elit</a>
+                            <small>Consectetur Adipisicing</small>
+                        </h3>
+                        <!-- <p class="product-text price">$9.99</p> -->
+                        <!-- <p class="product-text genre">DVD Rental</p> -->
+                    </div>
+                </div>
+            
+                <div class="product">
+                    <div class="product-img">
+                        <img src="engg.jpeg">
+                    </div>
+                    <div class="product-content">
+                        <h3>
+                            <a href="2.pdf"> adipisicing elit</a>
+                            <small>Consectetur Adipisicing</small>
+                        </h3>
+                        <!-- <p class="product-text price">$9.99</p> -->
+                        <!-- <p class="product-text genre">DVD Rental</p> -->
+                    </div>
+                </div>
+            
+                <div class="product">
+                    <div class="product-img">
+                        <img src="engg.jpeg">
+                    </div>
+                    <div class="product-content">
+                        <h3>
+                             <a href="1.pdf">adipisicing elit</a>
+                            <small>Consectetur Adipisicing</small>
+                        </h3>
+                        <!-- <p class="product-text price">$9.99</p> -->
+                        <!-- <p class="product-text genre">DVD Rental</p> -->
+                    </div>
+                </div>
+    </div>
+    <script>
+        $("#view").click(function () {
+            $(".products").toggleClass("products-table");
+        });
+    </script>
+    <!-- <script language="javascript">
+        function changeImage() {
+    
+            if (document.getElementById("imgClickAndChange").src == "icon-1.svg") 
+            {
+                document.getElementById("imgClickAndChange").src = "icon-2.svg";
+            }
+            else 
+            {
+                document.getElementById("imgClickAndChange").src = "icon-1.svg";
+            }
+        }
+    </script> -->
+</body>
+
+</html>
